@@ -3,7 +3,7 @@
 <br/>
 <h2>HomePage</h2>
 
-![capture.png](/screenshot/capture.png)
+![Capture.png](/screenshot/capture.png)
 
 <br/>
 <h2>if you don't fill in the todo field</h2>
