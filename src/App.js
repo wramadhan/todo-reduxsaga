@@ -19,12 +19,14 @@ function App() {
     };
 
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=id&apiKey=5452ba332d4949d6b8182fe5ed5636f3",
+      "https://newsapi.org/v2/top-headlines?country=id&apiKey=" +
+        process.env.REACT_APP_API_KEY,
       requestOptions
     )
       .then((response) => response.text())
       .then((result) => {
         setDatas(JSON.parse(result).articles);
+        console.log(JSON.parse(result).articles);
       })
       .catch((error) => alert("error", error));
   };
